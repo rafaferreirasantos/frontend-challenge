@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+}
+
+#circulo {
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#valor {
+    font-size: 84px;
+    font-weight: 800;
+    color: white;
+}
