@@ -1,10 +1,8 @@
 import { styled } from "styled-components"
 import { useFilter } from "../hooks/useFilter";
 import { FilterType } from "../types/filter-types";
+import { useQueryClient } from "@tanstack/react-query"
 
-interface FilterByTypeProps {
-
-}
 
 interface FilterItemProps {
     selected: boolean;
@@ -31,7 +29,7 @@ const FilterItem = styled.li<FilterItemProps>`
     border-bottom: ${props => props.selected ? '4px solid var(--orange-low);' : ''}
 `
 
-export function FilterByType(props: FilterByTypeProps) {
+export function FilterByType() {
     const { type, setType } = useFilter();
     const handleChangeType = (value: FilterType) => {
         setType(value);
